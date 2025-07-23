@@ -1,59 +1,52 @@
 # Angular Material TailwindCSS Starter
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+A modern Angular 17+ starter template that combines [Angular Material](https://material.angular.io/) and [Tailwind CSS](https://tailwindcss.com/) for rapid UI development. This template is pre-configured with best practices, theming, and a clean project structure—helping you jumpstart your next Angular project with minimal setup.
 
-## Development server
+## Overview
 
-To start a local development server, run:
+This starter provides:
 
-```bash
-ng serve
-```
+- Angular 17+ with standalone components and signals
+- Angular Material 3 theming and components
+- Tailwind CSS utility classes and configuration
+- Pre-configured SCSS and Material theming
+- Example layout, routing, and component structure
+- Ready-to-use build, test, and lint scripts
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Getting Started
 
-## Code scaffolding
+### Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [pnpm](https://pnpm.io/) or [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Angular CLI](https://angular.dev/tools/cli) (`npm install -g @angular/cli`)
 
-```bash
-ng generate component component-name
-```
+### Installation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Clone this repository and install dependencies:
 
 ```bash
-ng build
+git clone https://github.com/your-username/angular-mat-tailwind-starter.git
+cd angular-mat-tailwind-starter
+
+nvm install lts/jod
+nvm use lts/jod
+
+pnpm install
+
+pnpm start
+pnpm test
+pnpm check #linter/formating all-in-one
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Running the Development Server
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Start the local dev server:
 
 ```bash
-ng test
+pnpm start
 ```
 
-## Running end-to-end tests
+Open your browser at [http://localhost:4200](http://localhost:4200) to view the app. The server reloads automatically on file changes.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
