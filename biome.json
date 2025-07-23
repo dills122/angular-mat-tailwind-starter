@@ -6,7 +6,15 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false
+		"includes": [
+			"**",
+			"!dist",
+			"!node_modules",
+			"!.angular",
+			"!.vscode",
+			"!.github",
+			"!public"
+		]
 	},
 	"formatter": {
 		"enabled": true,

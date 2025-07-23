@@ -1,5 +1,4 @@
 import type { Config } from "jest";
-import { pathsToModuleNameMapper } from "ts-jest";
 
 // If you want to use paths from tsconfig, enable resolveJsonModule in tsconfig, or just hardcode for now
 
