@@ -1,6 +1,7 @@
 {
   "name": "angular-mat-tailwind-starter",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,11 +10,17 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "hooks:setup": "npx lefthook install",
-    "lint": "eslint . --ext .ts,.js",
-    "lint:fix": "eslint . --ext .ts,.js --fix"
+    "template:init": "schematics ./tools/schematics/collection.json:init",
+    "lint": "eslint . --ext .ts,.js,.html,.json",
+    "lint:fix": "eslint . --ext .ts,.js,.html,.json --fix"
   },
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
   "dependencies": {
     "@angular/cdk": "^20.1.2",
     "@angular/common": "^20.1.0",
@@ -28,6 +35,8 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^20.1.1",
+    "@angular-devkit/schematics-cli": "^20.1.1",
     "@angular-eslint/builder": "20.3.0",
     "@angular/build": "^20.1.1",
     "@angular/cli": "^20.1.1",
@@ -38,6 +47,7 @@
     "angular-eslint": "20.3.0",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsonc": "^2.20.1",
     "eslint-plugin-prettier": "^5.5.4",
     "globals": "^16.4.0",
     "jest": "^30.0.5",

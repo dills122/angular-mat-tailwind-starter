@@ -14,12 +14,27 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('renders the hero with the current title value', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Hello, angular-mat-tailwind-starter'
-    );
+
+    const heroHeading: HTMLHeadingElement | null = fixture.nativeElement.querySelector('h1');
+    expect(heroHeading?.textContent).toContain('angular-mat-tailwind-starter');
+  });
+
+  it('scrolls to the live example section when CTA is clicked', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+
+    const scrollToSpy = jest.spyOn(window, 'scrollTo').mockImplementation(() => {});
+
+    const jumpButton: HTMLButtonElement | null = fixture.nativeElement.querySelector('button');
+    expect(jumpButton).toBeTruthy();
+
+    jumpButton?.click();
+
+    expect(scrollToSpy).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' });
+
+    scrollToSpy.mockRestore();
   });
 });

@@ -1,12 +1,12 @@
 # Angular Material TailwindCSS Starter
 
-A modern Angular 17+ starter template that combines [Angular Material](https://material.angular.io/) and [Tailwind CSS](https://tailwindcss.com/) for rapid UI development. This template is pre-configured with best practices, theming, and a clean project structure—helping you jumpstart your next Angular project with minimal setup.
+A modern Angular 20+ starter template that combines [Angular Material](https://material.angular.io/) and [Tailwind CSS](https://tailwindcss.com/) for rapid UI development. This template is pre-configured with best practices, theming, and a clean project structure—helping you jumpstart your next Angular project with minimal setup.
 
 ## Overview
 
 This starter provides:
 
-- Angular 17+ with standalone components and signals
+- Angular 20+ with standalone components and signals
 - Angular Material 3 theming and components
 - Tailwind CSS utility classes and configuration
 - Pre-configured SCSS and Material theming
