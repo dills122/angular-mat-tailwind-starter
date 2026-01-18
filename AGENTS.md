@@ -26,7 +26,7 @@ You understand modern Angular development practices, architectural patterns, and
 
 ### Framework Best Practices
 
-- Use Angular 17+ features and best practices
+- Use Angular 20+ features and best practices
 - Implement proper state management (NgRx, Services)
 - Configure proper routing with Angular Router
 - Use proper component composition and lifecycle hooks
